@@ -249,7 +249,7 @@ const HomeBanner = () => {
         <div className="text-center">
           <h1
             ref={nameRef}
-            aria-label="Aitezaz Sikandar"
+            aria-label="Nambi Rajan"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             className="name-heading font-display text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] select-none font-bold leading-none uppercase cursor-pointer overflow-hidden mb-5"
@@ -259,7 +259,7 @@ const HomeBanner = () => {
               <span className="block">{splitText('Sikandar')}</span>
             </span>
             <span aria-hidden="true" className="hidden md:block">
-              {splitText('Aitezaz Sikandar')}
+              {splitText('Nambi Rajan')}
             </span>
           </h1>
         </div>

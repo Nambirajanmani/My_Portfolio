@@ -252,10 +252,10 @@ export default function ProjectDetails({ project }: { project: Project }) {
         <div className="text-center">
           <p className="text-muted text-lg">Have a project in mind?</p>
           <a
-            href="mailto:aitezazsikandar@gmail.com"
+            href="mailto:nambirajan2802@gmail.com"
             className="text-xl font-semibold text-[#bab6b3] hover:text-[#d4d2d0] transition"
           >
-            aitezazsikandar@gmail.com
+            nambirajan2802@gmail.com
           </a>
         </div>
         <button

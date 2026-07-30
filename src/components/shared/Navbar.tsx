@@ -221,10 +221,10 @@ const FullscreenMenu: React.FC<FullscreenMenuProps> = ({ isOpen, isTransitioning
           <div className="space-y-1 text-left">
             <p className="text-gray-mid font-mono text-xs uppercase tracking-widest mb-2">Get in Touch</p>
             <a
-              href="mailto:aitezazsikandar@gmail.com"
+              href="mailto:nambirajan2802@gmail.com"
               className="text-muted hover:text-white text-sm transition-colors duration-200"
             >
-              aitezazsikandar@gmail.com
+              nambirajan2802@gmail.com
             </a>
           </div>
 
@@ -508,11 +508,11 @@ const Navbar: React.FC<NavbarProps> = ({ hamburgerOnly = false }) => {
           hamburgerOnly
             ? { opacity: 1, scale: 1 }
             : {
-                opacity: isTransitioning ? 0 : 0,
-                scale: isTransitioning ? 0 : 0,
-                pointerEvents: isTransitioning ? 'none' : 'auto',
-                transition: 'opacity 0.5s ease-in-out',
-              }
+              opacity: isTransitioning ? 0 : 0,
+              scale: isTransitioning ? 0 : 0,
+              pointerEvents: isTransitioning ? 'none' : 'auto',
+              transition: 'opacity 0.5s ease-in-out',
+            }
         }
         aria-label="Toggle menu"
       >

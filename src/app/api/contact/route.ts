@@ -195,7 +195,7 @@ export async function POST(request: Request) {
       port: 465,
       secure: true,
       auth: {
-        user: 'aitezazsikandar@gmail.com',
+        user: 'nambirajan2802@gmail.com',
         pass: process.env.GMAIL_APP_PASSWORD,
       },
       // Force IPv4 lookup to prevent timeouts in serverless/hosting environments
@@ -209,8 +209,8 @@ export async function POST(request: Request) {
     } as any);
 
     await transporter.sendMail({
-      from: `"Portfolio Contact" <aitezazsikandar@gmail.com>`,
-      to: 'aitezazsikandar@gmail.com',
+      from: `"Portfolio Contact" <nambirajan2802@gmail.com>`,
+      to: 'nambirajan2802@gmail.com',
       replyTo: escapedEmail,
       subject: `New message from ${escapedName}`,
       html: `<p><strong>Name:</strong> ${escapedName}</p><p><strong>Email:</strong> ${escapedEmail}</p><p><strong>Message:</strong></p><p>${escapedMessage}</p>`,

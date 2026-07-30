@@ -81,7 +81,7 @@ export default function GlobalPreloader() {
     >
       <div className="flex flex-col items-center">
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-display font-bold uppercase tracking-wider text-cream flex flex-wrap justify-center mb-4">
-          {'AITEZAZ SIKANDAR'.split('').map((char, index) => (
+          {'Nambi Rajan'.split('').map((char, index) => (
             <span
               key={index}
               className="preloader-letter inline-block opacity-0"

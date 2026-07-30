@@ -227,7 +227,7 @@ const Contact = () => {
               type="button"
               data-cursor="copy"
               onClick={() => {
-                navigator.clipboard.writeText('aitezazsikandar@gmail.com');
+                navigator.clipboard.writeText('nambirajan2802@gmail.com');
                 const toast = document.getElementById('email-copy-toast');
                 if (toast) {
                   toast.style.opacity = '1';
@@ -244,7 +244,7 @@ const Contact = () => {
                 whiteSpace: 'nowrap',
               }}
             >
-              aitezazsikandar@gmail.com
+              nambirajan2802@gmail.com
               <span className="absolute bottom-0 left-0 w-full h-[2px] bg-forest origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out block" />
             </button>
           </div>

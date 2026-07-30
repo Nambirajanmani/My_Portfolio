@@ -1,9 +1,9 @@
 /**
  * @license
- * Copyright (c) 2026 Aitezaz Sikandar. All rights reserved.
+ * Copyright (c) 2026 Nambi Rajan. All rights reserved.
  * Licensed under the MIT License. See LICENSE in the project root for license information.
  * Project: Portfolio
- * Author: Aitezaz Sikandar (aitezazdev)
+ * Author: Nambi Rajan (aitezazdev)
  * Website: https://aitezaz.xyz
  */
 
