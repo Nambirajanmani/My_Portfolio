@@ -8,7 +8,7 @@ import AnimatedHeading from '@/components/ui/AnimateHeading';
 const About = () => {
   const headingText = 'Who Am I';
   const descriptionText =
-    "I'm a software engineer driven by a passion for turning ideas into clean, intuitive digital experiences.";
+    "I'm a software developer driven by a passion for turning ideas into clean, intuitive digital experiences.";
   const aboutMeText = `I am a Software Engineer who specializes in building end-to-end web applications. I love bridges—bridging the gap between front-end aesthetics (using GSAP and Tailwind CSS to create fluid, premium interfaces) and robust back-end systems (orchestrating REST APIs, database schemas, and real-time Socket.io channels).
 
 My tech journey started out of a pure curiosity to understand how software ticks under the hood. Today, that curiosity has translated into a love for clean code, optimistic UI updates, and building user journeys that feel alive and intuitive.
@@ -73,7 +73,7 @@ Outside of the editor, I enjoy collaborating on team-focused development, discus
       <section
         ref={sectionRef}
         id="about"
-        className="min-h-screen bg-ink text-light py-24 md:py-32 rounded-t-4xl"
+        className="min-h-screen bg-ink text-light py-24 md:py-32 rounded-t-4xl bg-grid"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="mb-10 md:mb-20">
@@ -90,22 +90,12 @@ Outside of the editor, I enjoy collaborating on team-focused development, discus
           <div className="grid grid-cols-12 gap-6 md:gap-8 pb-20 items-center">
             <div className="col-span-12 md:col-span-5 lg:col-span-5 flex items-center justify-center">
               <div className="about-image-wrapper w-full max-w-[350px] md:max-w-[380px] h-[360px] md:h-[450px] bg-elevated-dark rounded-2xl overflow-hidden border border-border-subtler">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  aria-label="Profile animation"
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/WhatsApp Image 2026-07-31 at 12.00.02 PM.jpeg"
+                  alt="Profile photo"
                   className="w-full h-full object-cover"
-                >
-                  <source src="/zaz-anim.mp4" type="video/mp4" />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/zaz-anim.webp"
-                    alt="Profile animation"
-                    className="w-full h-full object-cover"
-                  />
-                </video>
+                />
               </div>
             </div>
 

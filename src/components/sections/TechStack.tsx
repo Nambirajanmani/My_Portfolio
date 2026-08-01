@@ -13,7 +13,6 @@ const STACK_SECTIONS = [
     technologies: [
       { name: 'JavaScript', icon: '/Services/js.png' },
       { name: 'React', icon: '/Services/react.png' },
-      { name: 'Next.js', icon: '/Services/next.webp' },
       { name: 'Tailwind CSS', icon: '/Services/tailwind.png' },
       { name: 'Bootstrap', icon: '/Services/bootstrap.svg' },
       { name: 'Redux', icon: '/Services/redux.png' },
@@ -26,14 +25,13 @@ const STACK_SECTIONS = [
     technologies: [
       { name: 'Node.js', icon: '/Services/node.png' },
       { name: 'Express.js', icon: '/Services/express.png' },
-      { name: 'Firebase', icon: '/Services/firebase.svg' },
     ],
   },
   {
     id: 'database',
     title: 'DATABASE',
     technologies: [
-      { name: 'MongoDB', icon: '/Services/mongodb.svg' },
+      { name: 'postgresql', icon: '/Services/postgresql.svg' },
       { name: 'MySQL', icon: '/Services/mysql.svg' },
     ],
   },

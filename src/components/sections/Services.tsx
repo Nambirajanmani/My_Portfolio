@@ -39,7 +39,7 @@ const Services = () => {
       description:
         'End-to-end development of modern web applications, covering everything from frontend interfaces to backend APIs. I build complete, maintainable, and scalable systems using the MERN stack and modern tooling.',
       items: [
-        'MERN Stack (MongoDB, Express.js, React, Node.js)',
+        'PERN Stack (PostgreSQL, Express.js, React, Node.js)',
         'REST APIs & Integration',
         'Authentication & Authorization',
       ],
@@ -50,7 +50,7 @@ const Services = () => {
       description:
         'Crafting responsive, accessible, and elegant interfaces that deliver exceptional user experiences. I focus on clarity, performance, and seamless interaction across devices.',
       items: [
-        'React, Next.js, TailwindCSS, GSAP',
+        'React, Node.js, Express.js, TailwindCSS',
         'Optimized Rendering & Animations',
         'Figma to Code Implementation',
       ],

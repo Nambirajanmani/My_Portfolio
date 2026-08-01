@@ -11,8 +11,8 @@ import { safeSessionStorage } from '@/utils/storage';
 const RoleTicker = () => {
   const roles = [
     'Full Stack Developer',
-    'React & Next.js Engineer',
-    'MERN Stack Developer',
+    'React & Node.js Expert',
+    'PERN Stack Developer',
     'Open to Work Worldwide',
   ];
   const [currentIdx, setCurrentIdx] = useState<number>(0);
@@ -229,8 +229,12 @@ const HomeBanner = () => {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen px-6 sm:px-8 md:px-12 pt-28 pb-8 md:pt-20 md:pb-0 bg-cream flex items-center relative overflow-hidden"
-      style={{ opacity: reduced ? 1 : 0 }}
+      className="min-h-screen px-6 sm:px-8 md:px-12 pt-28 pb-8 md:pt-20 md:pb-0 flex items-center relative overflow-hidden"
+      style={{
+        opacity: reduced ? 1 : 0,
+        background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,180,216,0.10) 0%, #050814 65%)',
+        backgroundColor: '#050814',
+      }}
     >
       <AmbientGeometry />
 
@@ -252,11 +256,10 @@ const HomeBanner = () => {
             aria-label="Nambi Rajan"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="name-heading font-display text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] select-none font-bold leading-none uppercase cursor-pointer overflow-hidden mb-5"
+            className="name-heading font-display text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] select-none font-bold leading-none uppercase cursor-pointer overflow-hidden mb-5 text-white"
           >
             <span aria-hidden="true" className="block md:hidden">
-              <span className="block">{splitText('Aitezaz')}</span>
-              <span className="block">{splitText('Sikandar')}</span>
+              <span className="block">{splitText('Nambi Rajan')}</span>
             </span>
             <span aria-hidden="true" className="hidden md:block">
               {splitText('Nambi Rajan')}
@@ -292,7 +295,7 @@ const HomeBanner = () => {
                 variant="light"
               />
               <AnimatedButton
-                onClick={() => window.open('/01_aitezaz_resume.pdf', '_blank')}
+                onClick={() => window.open('/Nambirajan-cv.pdf', '_blank')}
                 topText="RESUME"
                 bottomText="DOWNLOAD →"
                 variant="outline"

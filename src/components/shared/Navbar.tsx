@@ -230,9 +230,8 @@ const FullscreenMenu: React.FC<FullscreenMenuProps> = ({ isOpen, isTransitioning
 
           <div className="flex gap-6 justify-start">
             {[
-              { label: 'GitHub', href: 'https://github.com/aitezazdev' },
-              { label: 'Source Code', href: 'https://github.com/aitezazdev/Portfolio' },
-              { label: 'LinkedIn', href: 'https://linkedin.com/in/aitezaz-sikandar' },
+              { label: 'GitHub', href: 'https://github.com/Nambirajanmani' },
+              { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nambirajan2802?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
             ].map((s) => (
               <a
                 key={s.label}
@@ -333,12 +332,12 @@ const Navbar: React.FC<NavbarProps> = ({ hamburgerOnly = false }) => {
       }
     }
 
-    if (logo) gsap.set(logo, { x: shouldHideNav ? 0 : -50, opacity: shouldHideNav ? 1 : 0 });
+    if (logo) gsap.set(logo, { x: hasAnimated || shouldHideNav ? 0 : -50, opacity: hasAnimated || shouldHideNav ? 1 : 0 });
     if (linksContainer) {
       const links = linksContainer.querySelectorAll('li');
-      gsap.set(links, { y: shouldHideNav ? 0 : -20, opacity: shouldHideNav ? 1 : 0 });
+      gsap.set(links, { y: hasAnimated || shouldHideNav ? 0 : -20, opacity: hasAnimated || shouldHideNav ? 1 : 0 });
     }
-  }, [hamburgerOnly, shouldHideNav]);
+  }, [hamburgerOnly, shouldHideNav, hasAnimated]);
 
   // Entry animation after preloader + page transition
   useEffect(() => {
@@ -453,18 +452,18 @@ const Navbar: React.FC<NavbarProps> = ({ hamburgerOnly = false }) => {
       {!hamburgerOnly && (
         <nav
           ref={navRef}
-          className="hidden md:flex fixed w-full justify-between items-center px-12 py-4 mb-16 bg-cream z-50"
+          className="hidden md:flex fixed w-full justify-between items-center px-12 py-4 mb-16 bg-surface-mid/80 backdrop-blur-md border-b border-border-subtler/40 z-50"
           style={navStyle}
         >
           <strong
             ref={logoRef}
-            className="text-warm text-lg font-sans tracking-wide font-medium"
+            className="text-cream text-lg font-sans tracking-wide font-medium"
           >
-            Aitezaz.
+            Nambi Rajan
           </strong>
           <ul
             ref={linksContainerRef}
-            className="flex gap-5 text-warm text-base font-sans font-medium uppercase tracking-wide"
+            className="flex gap-5 text-cream text-base font-sans font-medium uppercase tracking-wide"
           >
             {links.filter((l) => !l.menuOnly).map((link) => (
               <AnimatedLink key={link.href}>
@@ -486,12 +485,12 @@ const Navbar: React.FC<NavbarProps> = ({ hamburgerOnly = false }) => {
       {!hamburgerOnly && (
         <nav
           ref={mobileNavRef}
-          className="mobile-navbar md:hidden fixed w-full z-50 bg-cream/90 backdrop-blur-md border-b border-warm/10"
+          className="mobile-navbar md:hidden fixed w-full z-50 bg-surface-mid/80 backdrop-blur-md border-b border-border-subtler/40"
           style={navStyle}
         >
           <div className="flex justify-between items-center px-6 h-20">
-            <strong className="text-warm text-lg font-sans tracking-wide font-medium">
-              Aitezaz.
+            <strong className="text-cream text-lg font-sans tracking-wide font-medium">
+              Nambi Rajan
             </strong>
             <div className="w-10 h-10" />
           </div>

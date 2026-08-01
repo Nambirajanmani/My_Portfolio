@@ -63,7 +63,7 @@ const Footer = () => {
   };
 
   return (
-    <footer ref={footerRef} className="relative z-30 bg-cream px-6 sm:px-8 md:px-12 py-12 md:py-16">
+    <footer ref={footerRef} className="relative z-30 bg-ink px-6 sm:px-8 md:px-12 py-12 md:py-16">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-10 md:mb-12">
           <div>
@@ -93,25 +93,16 @@ const Footer = () => {
             </h3>
             <ul className="flex flex-col gap-3 sm:gap-4 text-warm text-xs sm:text-sm font-sans font-medium uppercase tracking-wide">
               <AnimatedLink>
-                <a href="https://linkedin.com/in/aitezaz-sikandar" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/nambirajan2802?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
                   Linkedin
                 </a>
               </AnimatedLink>
               <AnimatedLink>
-                <a href="https://instagram.com/ur_zaz" target="_blank" rel="noopener noreferrer">
-                  Instagram
-                </a>
-              </AnimatedLink>
-              <AnimatedLink>
-                <a href="https://github.com/aitezazdev" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Nambirajanmani" target="_blank" rel="noopener noreferrer">
                   Github
                 </a>
               </AnimatedLink>
-              <AnimatedLink>
-                <a href="https://github.com/aitezazdev/Portfolio" target="_blank" rel="noopener noreferrer">
-                  Source Code
-                </a>
-              </AnimatedLink>
+              
             </ul>
           </div>
 

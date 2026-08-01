@@ -73,16 +73,16 @@ export default function Home() {
         <section ref={homeRef} className="sticky top-0 left-0 w-full h-screen">
           <HomeBanner />
         </section>
-        <div id="about-section-wrapper" className="relative bg-black">
+        <div id="about-section-wrapper" className="relative bg-surface">
           <div ref={reuniteRef} className="relative z-10 bg-ink min-h-screen overflow-hidden">
             <About techStackRef={techStackRef} />
           </div>
         </div>
-        <section className="relative z-20 bg-white">
+        <section className="relative z-20 bg-cream">
           <Projects />
         </section>
         <MarqueeStrip />
-        <section className="relative z-25 bg-black">
+        <section className="relative z-25 bg-surface">
           <Contact />
         </section>
         <Footer />
